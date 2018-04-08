@@ -8,3 +8,6 @@ package-lock.json
 .git/
 .vscode/
 npm-debug.log
+tsconfig.json
+tsconfig.spec.json
+jasmine.json

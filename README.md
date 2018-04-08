@@ -1,15 +1,15 @@
-# README #
+# README
 
 Angular Dependency Injection Kit
 
 
-### Installing
+## Installing
 
 Do the following steps to install **ng-di-kit**:
 ```
 npm install ng-di-kit
 ```
-<br/>
+
 ## Authors
 
 **01)** **Joseph Eniojukan** - [joejukan](https://github.com/joejukan)<br/>
@@ -17,7 +17,7 @@ npm install ng-di-kit
 
 ## License
 
-This project is licensed under the ISC License - see the **LICENSE.md** file for details
+This project is licensed under the ISC License - see the [LICENSE.md](https://github.com/joejukan/ng-di-kit/blob/master/LICENSE.md) file for details
 
 Copyright 2018 Joseph Eniojukan
 

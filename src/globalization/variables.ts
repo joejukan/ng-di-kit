@@ -1,4 +1,6 @@
 import {Routes} from "@angular/router";
-import { Type } from "@angular/core";
 export var routes:Routes = [];
-export var components:Array<Type<any>> = [];
+export var declarations:Array<any> = [];
+export var providers:Array<any> = [];
+export var importers:Array<any> = [];
+export var exporters:Array<any> = [];
