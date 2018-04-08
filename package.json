@@ -1,0 +1,38 @@
+{
+  "name": "ng-di-kit",
+  "version": "0.0.1",
+  "description": "Angular Dependency Injection Kit",
+  "main": "index",
+  "types": "index",
+  "scripts": {
+    "build": "tsc",
+    "test": "./node_modules/.bin/jasmine-ts src/specification/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joejukan/ng-di-kit.git"
+  },
+  "keywords": [
+    "Angular",
+    "AngularJS",
+    "Dependency",
+    "Injection"
+  ],
+  "author": "Joseph Eniojukan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joejukan/ng-di-kit/issues"
+  },
+  "homepage": "https://github.com/joejukan/ng-di-kit#readme",
+  "dependencies": {
+    "@angular/core": "^5.2.9",
+    "@angular/router": "^5.2.9",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "@types/underscore": "^1.8.8",
+    "jasmine-ts": "^0.2.1",
+    "ts-indexer": "0.0.2"
+  }
+}
