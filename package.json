@@ -1,9 +1,9 @@
 {
   "name": "ng-di-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular Dependency Injection Kit",
-  "main": "index",
-  "types": "index",
+  "main": "lib/index",
+  "types": "lib/index",
   "scripts": {
     "build": "tsc",
     "test": "./node_modules/.bin/jasmine-ts src/specification/**/*.spec.ts"
