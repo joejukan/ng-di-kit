@@ -1,7 +1,8 @@
 # Angular Dependency Injection Kit
 This library allows Angular developers to inject Components, Services and Modules to the main angular 
 app via decorators.<br/>
-The library provides a number of decorators and corresponding global arrays to allow for a cleaner injection in the main **Angualr App Module**.
+The library provides a number of decorators and corresponding global arrays to allow for a cleaner injection in the main **Angualr App Module**.<br/>
+
 |Decorator        |Global Array         |Description                                           |
 |-----------------|---------------------|------------------------------------------------------|
 |**DIDeclare**    |**declarations**     |Injects components into the App Module as declarations|
@@ -103,7 +104,10 @@ export class AppModule { }
 ```
 
 ## Authors
-**01)** **Joseph Eniojukan** - [joejukan](https://github.com/joejukan)<br/><br/>
+**01)** **Joseph Eniojukan** - [joejukan](https://github.com/joejukan)<br/>
+
+## ChangeLog
+[CHANGELOG.md](https://github.com/joejukan/ng-di-kit/blob/master/CHANGELOG.md) file for details
 
 ## License
 This project is licensed under the ISC License - see the [LICENSE.md](https://github.com/joejukan/ng-di-kit/blob/master/LICENSE.md) file for details

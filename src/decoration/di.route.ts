@@ -2,7 +2,7 @@ import {omit} from "underscore";
 import {DIRouteOptions} from "../abstraction";
 import {routes} from "../globalization"
 export function DIRoute (options:DIRouteOptions){
-    return function (type: {new (): any}) {
+    return function (type: {new (...args): any}) {
         options.component = type;
         if(options.path){
             routes.push(options);

@@ -4,6 +4,10 @@ All notable changes to **ng-di-kit** will be documented in this file.
 - The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)<br/>
 - This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)
 
+## [0.0.3] - 2018-04-15
+### Fixed
+- [Issue #2](https://github.com/joejukan/ng-di-kit/issues/2) Decorators do not Support Classes with Constructor Arguments
+
 ## [0.0.2] - 2018-04-14
 ### Fixed
 - [Issue #1](https://github.com/joejukan/ng-di-kit/issues/1) Import not working

@@ -5,7 +5,9 @@
   "main": "lib/index",
   "types": "lib/index",
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf lib/*",
+    "build": "npm run clean && tsc",
+    "patch": "npm run build && npm run test && npm version patch -m \"[PATCH] version (%s)\" && npm publish",
     "test": "./node_modules/.bin/jasmine-ts src/specification/**/*.spec.ts"
   },
   "repository": {
