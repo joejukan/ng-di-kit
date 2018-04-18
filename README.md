@@ -3,13 +3,14 @@ This library allows Angular developers to inject Components, Services and Module
 app via decorators.<br/>
 The library provides a number of decorators and corresponding global arrays to allow for a cleaner injection in the main **Angualr App Module**.<br/>
 
-|Decorator        |Global Array         |Description                                           |
-|-----------------|---------------------|------------------------------------------------------|
-|**DIDeclare**    |**declarations**     |Injects components into the App Module as declarations|
-|**DIProvide**    |**providers**        |Injects services into the App Module as providers     |
-|**DIRoute**      |**routes**           |Injects components into the App Module as routes      |
-|**DIImport**     |**importers**        |Injects modules into the App Module as imports        |
-|**DIExport**     |**exporters**        |Injects components into the App Module as exports     |<br/>
+|Decorator        |Global Array         |Description                                                       |
+|-----------------|---------------------|------------------------------------------------------------------|
+|**DIDeclare**    |**declarations**     |Used to inject components into the App Module as declarations     |
+|**DIEntry**      |**entries**          |Used to inject components into the App Module as entry components |
+|**DIProvide**    |**providers**        |Used to inject services into the App Module as providers          |
+|**DIRoute**      |**routes**           |Used to inject components into the App Module as routes           |
+|**DIImport**     |**importers**        |Used to inject modules into the App Module as imports             |
+|**DIExport**     |**exporters**        |Used to inject components into the App Module as exports          |<br/>
 
 **NOTE**<br/>
 The user defined components, services and modules using these decorators must be imported into the **Angular App Module**.<br/>
@@ -57,7 +58,7 @@ export class LoginService  {
 import { DIRoute } from "ng-di-kit";
 import { Component, OnInit } from '@angular/core';
 
-@DIRoute()
+@DIRoute(paths: ['/users'])
 @Component({
   selector: 'users-component',
   templateUrl: './users.component.html'
@@ -79,7 +80,7 @@ export * from './users.component'
 **app.module.ts** <a name="importas"></a>
 ```typescript
 import * as components from './index';
-import { declarations, providers, importers, routes } from 'ng-di-kit';
+import { declarations, entries, providers, importers, routes } from 'ng-di-kit';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
@@ -95,13 +96,25 @@ importers.push(HttpClientModule);
 importers.push(RouterModule.forRoot(routes));
 
 @NgModule({
-  imports:      importers,
-  providers:    providers,
+  imports: importers,
+  providers: providers,
   declarations: declarations,
-  bootstrap:    [ AppComponent ]
+  entryComponents: entries,
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
 ```
+
+## Options
+### DIDeclare
+|Name          |Type           |Default  |Description                                                        |
+|--------------|---------------|---------|-------------------------------------------------------------------|
+|isEntry       |boolean        |`false`  |Indicates if the declared component is also an entry component     |<br/>
+
+Example:
+```typescript
+@DIDeclare({isEntry: true})
+``` 
 
 ## Authors
 **01)** **Joseph Eniojukan** - [joejukan](https://github.com/joejukan)<br/>
