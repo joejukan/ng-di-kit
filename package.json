@@ -16,9 +16,9 @@
   },
   "keywords": [
     "Angular",
-    "AngularJS",
     "Dependency",
-    "Injection"
+    "Injection",
+    "DI"
   ],
   "author": "Joseph Eniojukan",
   "license": "ISC",
