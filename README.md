@@ -1,4 +1,8 @@
 # Angular Dependency Injection Kit
+[![Build Status](https://api.travis-ci.org/joejukan/ng-di-kit.svg?branch=master)](http://travis-ci.org/joejukan/ng-di-kit)
+[![NPM Version](http://img.shields.io/npm/v/ng-di-kit.svg?style=flat)](https://www.npmjs.org/package/ng-di-kit)
+[![NPM Downloads](https://img.shields.io/npm/dm/ng-di-kit.svg?style=flat)](https://npmcharts.com/compare/ng-di-kit?minimal=true)
+
 This library allows Angular developers to inject Components, Services and Modules to the main angular 
 app via decorators.<br/>
 The library provides a number of decorators and corresponding global arrays to allow for a cleaner injection in the main **Angualr App Module**.<br/>
