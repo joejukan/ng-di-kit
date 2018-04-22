@@ -3,6 +3,9 @@ All notable changes to **ng-di-kit** will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)<br/>
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)<br/><br/>
 
+## [1.0.0] - 2018-04-22
+- Updated [travis configuration](https://github.com/joejukan/ng-di-kit/blob/master/.travis.yml) to support the latest stable version of Node.<br/><br/>
+
 ## [0.0.5] - 2018-04-21
 - Added [travis configuration](https://github.com/joejukan/ng-di-kit/blob/master/.travis.yml) file.
 - Added pre and post version scripts.<br/><br/>
